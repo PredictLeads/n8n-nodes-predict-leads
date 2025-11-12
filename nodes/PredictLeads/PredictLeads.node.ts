@@ -76,6 +76,10 @@ export class PredictLeads implements INodeType {
 						value: 'jobOpenings',
 					},
 					{
+						name: 'Technology Detections',
+						value: 'technologyDetections',
+					},
+					{
 						name: 'Technologies',
 						value: 'technologies',
 					},
@@ -136,16 +140,32 @@ export class PredictLeads implements INodeType {
 				displayOptions:
 				{
 					show: {
-						resource: ['technologies'],
+						resource: ['technologyDetections'],
 					},
 				},
 				options: [
 					retrieveTechnologiesUsedByCompanyOperation,
 					retrieveCompaniesUsingSpecificTechnologyOperation,
+				],
+				default: 'retrieveTechnologiesUsedByCompany',
+			},
+
+			{
+				displayName: 'Operation',
+				name: 'operation',
+				type: 'options',
+				noDataExpression: true,
+				displayOptions:
+				{
+					show: {
+						resource: ['technologies'],
+					},
+				},
+				options: [
 					retrieveAllTrackedTechnologiesOperation,
 					retrieveSingleTechnologyByIdOrFuzzyNameOperation,
 				],
-				default: 'retrieveTechnologiesUsedByCompany',
+				default: 'retrieveAllTrackedTechnologies',
 			},
 
 			// Companies Fields
