@@ -24,6 +24,7 @@ import {
 	retrieveCompanyConnectionsOperation,
 	retrieveCompanyConnectionsFields,
 	retrievePortfolioCompaniesOperation,
+	retrieveCompanyWebsiteEvolutionOperation,
 
 	idFields,
 	domainFields,
@@ -101,6 +102,10 @@ export class PredictLeads implements INodeType {
 					{
 						name: 'Connections',
 						value: 'connections',
+					},
+					{
+						name: 'Website Evolution',
+						value: 'websiteEvolution',
 					},
 				],
 				default: 'companies',
@@ -230,6 +235,23 @@ export class PredictLeads implements INodeType {
 					retrievePortfolioCompaniesOperation,
 				],
 				default: 'retrieveCompanyConnections',
+			},
+
+			{
+				displayName: 'Operation',
+				name: 'operation',
+				type: 'options',
+				noDataExpression: true,
+				displayOptions:
+				{
+					show: {
+						resource: ['websiteEvolution'],
+					},
+				},
+				options: [
+					retrieveCompanyWebsiteEvolutionOperation,
+				],
+				default: 'retrieveCompanyWebsiteEvolution',
 			},
 
 			// Common Fields

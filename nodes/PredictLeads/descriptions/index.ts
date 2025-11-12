@@ -12,6 +12,7 @@ export * from './RetrieveSingleNewsEventDescription';
 export * from './RetrieveCompanyFinancingEventsDescription';
 export * from './RetrieveCompanyConnectionsDescription';
 export * from './RetrievePortfolioCompaniesDescription';
+export * from './RetrieveCompanyWebsiteEvolutionDescription';
 
 export * from './TechnologyCommon';
 export * from './Common';
