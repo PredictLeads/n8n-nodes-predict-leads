@@ -12,6 +12,8 @@ export const retrieveListOfJobOpeningsOperation: INodePropertyOptions = {
 			qs: {
 				location: '={{ $parameter.location }}',
 				onet_codes: '={{ $parameter.onetCodes }}',
+				page: '={{ $parameter.page }}',
+				limit: '={{ $parameter.limit }}',
 			}
 		},
 	},
