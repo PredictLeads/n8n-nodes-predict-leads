@@ -23,6 +23,7 @@ import {
 	retrieveCompanyFinancingEventsOperation,
 	retrieveCompanyConnectionsOperation,
 	retrieveCompanyConnectionsFields,
+	retrievePortfolioCompaniesOperation,
 
 	idFields,
 	domainFields,
@@ -226,6 +227,7 @@ export class PredictLeads implements INodeType {
 				},
 				options: [
 					retrieveCompanyConnectionsOperation,
+					retrievePortfolioCompaniesOperation,
 				],
 				default: 'retrieveCompanyConnections',
 			},

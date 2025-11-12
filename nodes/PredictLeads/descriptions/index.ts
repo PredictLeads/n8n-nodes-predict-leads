@@ -10,7 +10,8 @@ export * from './RetrieveSingleTechnologyByIdOrFuzzyNameDescription';
 export * from './RetrieveCompanyNewsEventsDescription';
 export * from './RetrieveSingleNewsEventDescription';
 export * from './RetrieveCompanyFinancingEventsDescription';
-export * from './RetrieveCompanyConnectionsDescription'
+export * from './RetrieveCompanyConnectionsDescription';
+export * from './RetrievePortfolioCompaniesDescription';
 
 export * from './TechnologyCommon';
 export * from './Common';
