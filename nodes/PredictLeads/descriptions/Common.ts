@@ -30,6 +30,7 @@ export const domainFields: INodeProperties[] = [
                     'retrieveCompany',
                     'retrieveCompanyJobOpenings',
                     'retrieveTechnologiesUsedByCompany',
+                    'retrieveCompanyNewsEvents',
                 ],
             },
         },

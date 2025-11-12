@@ -7,6 +7,7 @@ export * from './RetrieveTechnologiesUsedByCompanyDescription';
 export * from './RetrieveCompaniesUsingSpecificTechnologyDescription';
 export * from './RetrieveAllTrackedTechnologiesDescription';
 export * from './RetrieveSingleTechnologyByIdOrFuzzyNameDescription';
+export * from './RetrieveCompanyNewsEventsDescription';
 
 export * from './TechnologyCommon';
 export * from './Common';

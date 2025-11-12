@@ -17,10 +17,12 @@ import {
 	retrieveAllTrackedTechnologiesOperation,
 	retrieveAllTrackedTechnologiesFields,
 	retrieveSingleTechnologyByIdOrFuzzyNameOperation,
+	retrieveCompanyNewsEventsOperation,
+	retrieveCompanyNewsEventsFields,
 
-	technologyIdOrFuzzyNameFields,
 	idFields,
 	domainFields,
+	technologyIdOrFuzzyNameFields,
 	locationFields,
 	seenAtRangeFields,
 	paginationFields,
@@ -168,6 +170,26 @@ export class PredictLeads implements INodeType {
 				default: 'retrieveAllTrackedTechnologies',
 			},
 
+			{
+				displayName: 'Operation',
+				name: 'operation',
+				type: 'options',
+				noDataExpression: true,
+				displayOptions:
+				{
+					show: {
+						resource: ['newsEvents'],
+					},
+				},
+				options: [
+					retrieveCompanyNewsEventsOperation,
+				],
+				default: 'retrieveCompanyNewsEvents',
+			},
+
+			// Common Fields
+			...idFields,
+			...domainFields,
 			// Companies Fields
 			...retrieveCompaniesFields,
 			// Job Openings Fields
@@ -175,11 +197,11 @@ export class PredictLeads implements INodeType {
 			...retrieveListOfJobOpeningsFields,
 			// Technologies Fields
 			...retrieveAllTrackedTechnologiesFields,
+			// News Events Fields
+			...retrieveCompanyNewsEventsFields,
 			// Common Technology Fields
 			...technologyIdOrFuzzyNameFields,
 			// Common Fields
-			...idFields,
-			...domainFields,
 			...locationFields,
 			...seenAtRangeFields,
 			...paginationFields,
