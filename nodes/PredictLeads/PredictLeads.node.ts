@@ -21,6 +21,8 @@ import {
 	retrieveCompanyNewsEventsFields,
 	retrieveSingleNewsEventOperation,
 	retrieveCompanyFinancingEventsOperation,
+	retrieveCompanyConnectionsOperation,
+	retrieveCompanyConnectionsFields,
 
 	idFields,
 	domainFields,
@@ -211,6 +213,23 @@ export class PredictLeads implements INodeType {
 				default: 'retrieveCompanyFinancingEvents',
 			},
 
+			{
+				displayName: 'Operation',
+				name: 'operation',
+				type: 'options',
+				noDataExpression: true,
+				displayOptions:
+				{
+					show: {
+						resource: ['connections'],
+					},
+				},
+				options: [
+					retrieveCompanyConnectionsOperation,
+				],
+				default: 'retrieveCompanyConnections',
+			},
+
 			// Common Fields
 			...idFields,
 			...domainFields,
@@ -223,6 +242,8 @@ export class PredictLeads implements INodeType {
 			...retrieveAllTrackedTechnologiesFields,
 			// News Events Fields
 			...retrieveCompanyNewsEventsFields,
+			// Connections Fields
+			...retrieveCompanyConnectionsFields,
 			// Common Technology Fields
 			...technologyIdOrFuzzyNameFields,
 			// Common Fields
