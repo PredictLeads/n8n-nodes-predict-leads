@@ -10,6 +10,7 @@ export const idFields: INodeProperties[] = [
             show: {
                 operation: [
                     'retrieveSingleJobOpening',
+                    'retrieveSingleNewsEvent',
                 ],
             },
         },

@@ -19,6 +19,7 @@ import {
 	retrieveSingleTechnologyByIdOrFuzzyNameOperation,
 	retrieveCompanyNewsEventsOperation,
 	retrieveCompanyNewsEventsFields,
+	retrieveSingleNewsEventOperation,
 
 	idFields,
 	domainFields,
@@ -183,6 +184,7 @@ export class PredictLeads implements INodeType {
 				},
 				options: [
 					retrieveCompanyNewsEventsOperation,
+					retrieveSingleNewsEventOperation,
 				],
 				default: 'retrieveCompanyNewsEvents',
 			},
