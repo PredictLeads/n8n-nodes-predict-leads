@@ -20,6 +20,7 @@ import {
 	retrieveCompanyNewsEventsOperation,
 	retrieveCompanyNewsEventsFields,
 	retrieveSingleNewsEventOperation,
+	retrieveCompanyFinancingEventsOperation,
 
 	idFields,
 	domainFields,
@@ -89,6 +90,10 @@ export class PredictLeads implements INodeType {
 					{
 						name: 'News Events',
 						value: 'newsEvents',
+					},
+					{
+						name: 'Financing Events',
+						value: 'financingEvents',
 					},
 					{
 						name: 'Connections',
@@ -187,6 +192,23 @@ export class PredictLeads implements INodeType {
 					retrieveSingleNewsEventOperation,
 				],
 				default: 'retrieveCompanyNewsEvents',
+			},
+
+			{
+				displayName: 'Operation',
+				name: 'operation',
+				type: 'options',
+				noDataExpression: true,
+				displayOptions:
+				{
+					show: {
+						resource: ['financingEvents'],
+					},
+				},
+				options: [
+					retrieveCompanyFinancingEventsOperation,
+				],
+				default: 'retrieveCompanyFinancingEvents',
 			},
 
 			// Common Fields
