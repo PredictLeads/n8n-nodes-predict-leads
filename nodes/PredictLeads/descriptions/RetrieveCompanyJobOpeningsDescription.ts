@@ -36,7 +36,7 @@ export const retrieveCompanyJobOpeningsFields: INodeProperties[] = [
 				operation: ['retrieveCompanyJobOpenings'],
 			},
 		},
-		default: '',
+		default: false,
 		description: 'Set to true if you\'d like to receive JobOpenings that are not closed, have last_seen_at more recent than 5 days and were found in the last year.',
 	},
 	{
@@ -48,7 +48,7 @@ export const retrieveCompanyJobOpeningsFields: INodeProperties[] = [
 				operation: ['retrieveCompanyJobOpenings'],
 			},
 		},
-		default: '',
+		default: false,
 		description: 'Similar to active_only, but without considering last_seen_at timestamp.',
 	},
 	{
@@ -60,7 +60,7 @@ export const retrieveCompanyJobOpeningsFields: INodeProperties[] = [
 				operation: ['retrieveCompanyJobOpenings'],
 			},
 		},
-		default: '',
+		default: false,
 		description: 'Only return JobOpenings that have description.',
 	},
 	{
@@ -72,7 +72,7 @@ export const retrieveCompanyJobOpeningsFields: INodeProperties[] = [
 				operation: ['retrieveCompanyJobOpenings'],
 			},
 		},
-		default: '',
+		default: false,
 		description: 'Only return JobOpenings that have location.',
 	},
 	{
