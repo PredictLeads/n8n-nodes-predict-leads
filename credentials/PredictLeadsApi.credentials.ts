@@ -1,4 +1,5 @@
 import type {
+  IAuthenticateGeneric,
   ICredentialType,
   INodeProperties,
   ICredentialTestRequest,
@@ -32,16 +33,20 @@ export class PredictLeadsApi implements ICredentialType {
     },
   ];
 
-  // No authenticate block here (we’ll add qs explicitly in the node)
+  authenticate: IAuthenticateGeneric = {
+		type: 'generic',
+		properties: {
+			headers: {
+				'X-Api-Token': '={{$credentials.apiKey}}',
+				'X-Api-Key': '={{$credentials.apiToken}}',
+			},
+		},
+	};
 
-  // Robust test: exact path, inline query, trim + encode
   test: ICredentialTestRequest = {
     request: {
       method: 'GET',
-      baseURL: '={{ $credentials.baseUrl.replace(/\\/+$/, "") }}', // strip trailing slash
-      // no leading slash in url; inline the query string
-      url: '=companies/github.com?api_key={{ encodeURIComponent(($credentials.apiKey || "").trim()) }}&api_token={{ encodeURIComponent(($credentials.apiToken || "").trim()) }}',
-      headers: { Accept: 'application/json', 'User-Agent': 'n8n-PredictLeads/1.0' },
+      url: 'https://predictleads.com/api/v3/companies/predictleads.com',
     },
   };
 }
