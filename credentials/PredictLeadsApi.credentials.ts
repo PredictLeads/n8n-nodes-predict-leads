@@ -23,7 +23,7 @@ export class PredictLeadsApi implements ICredentialType {
       default: '',
       required: true,
       typeOptions: { password: true },
-      description: 'Your personal Authentication key. You can find it under "API Subscriptions" section on "Your Subscription Plans" page.',
+      description: 'Your personal "Authentication key". You can find it under "API Subscriptions" section on "Your Subscription Plans" page.',
     },
     {
       displayName: 'Authentication Token',
@@ -32,7 +32,7 @@ export class PredictLeadsApi implements ICredentialType {
       default: '',
       required: true,
       typeOptions: { password: true },
-      description: 'Your personal Authentication token. You can find it under "API Subscriptions" section on "Your Subscription Plans" page.',
+      description: 'Your personal "Authentication token". You can find it under "API Subscriptions" section on "Your Subscription Plans" page.',
     },
   ];
 
