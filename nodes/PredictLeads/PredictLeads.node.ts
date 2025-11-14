@@ -39,7 +39,10 @@ export class PredictLeads implements INodeType {
 	{
 		displayName: 'PredictLeads',
 		name: 'predictLeads',
-		icon: 'file:predictleads-favicon.svg',
+		icon: {
+			light: 'file:../../images/predictleads-favicon-purple.svg',
+			dark: 'file:../../images/predictleads-favicon-white.svg',
+		},
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter.resource + ": " + $parameter.operation}}',

@@ -10,7 +10,10 @@ export class PredictLeadsApi implements ICredentialType {
   name = 'predictLeadsApi';
   displayName = 'PredictLeads API';
   documentationUrl = 'https://docs.predictleads.com';
-  icon: Icon = 'file:../nodes/PredictLeads/predictleads-favicon.svg';
+  icon: Icon = {
+    light: 'file:../images/predictleads-favicon-purple.svg',
+    dark: 'file:../images/predictleads-favicon-white.svg',
+  };
 
   properties: INodeProperties[] = [
     {
