@@ -5,6 +5,7 @@ export const technologyIdOrFuzzyNameFields: INodeProperties[] = [
 		displayName: 'ID or Fuzzy Name',
 		name: 'idOrFuzzyName',
 		type: 'string',
+		required: true,
 		displayOptions: {
 			show: {
 				operation: [
