@@ -22,7 +22,6 @@ export const retrieveCompaniesOperation: INodePropertyOptions = {
 
 export const retrieveCompaniesFields: INodeProperties[] = [
 	{
-		// TODO: Sizes should be an array
 		displayName: 'Sizes',
 		name: 'sizes',
 		type: 'multiOptions',

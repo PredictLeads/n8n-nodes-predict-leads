@@ -21,7 +21,6 @@ export const retrieveCompanyNewsEventsOperation: INodePropertyOptions = {
 };
 
 export const retrieveCompanyNewsEventsFields: INodeProperties[] = [
-	// TODO: How to sent empty values?
     {
         displayName: 'Found At From',
         name: 'foundAtFrom',

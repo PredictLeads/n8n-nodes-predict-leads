@@ -64,7 +64,6 @@ export const locationFields: INodeProperties[] = [
 ];
 
 export const seenAtRangeFields: INodeProperties[] = [
-    // TODO: How to sent empty values?
     {
         displayName: 'First Seen At From',
         name: 'firstSeenAtFrom',
