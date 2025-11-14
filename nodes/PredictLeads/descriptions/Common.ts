@@ -43,24 +43,36 @@ export const domainFields: INodeProperties[] = [
     },
 ];
 
+const locationField: INodeProperties = {
+    displayName: 'Location',
+    name: 'location',
+    type: 'string',
+    default: '',
+    description: 'The response will include only companies located in the given country name or state name/abbreviation',
+};
+
 export const locationFields: INodeProperties[] = [
     {
-		displayName: 'Location',
-		name: 'location',
-		type: 'string',
-        // TODO: location is not always required
-		required: true,
+        ...locationField,
+        required: true,
+        displayOptions: {
+            show: {
+                operation: [
+                    'retrieveCompanies',
+                ],
+            },
+        },
+    },
+    {
+        ...locationField,
 		displayOptions: {
 			show: {
 				operation: [
-                    'retrieveCompanies',
                     'retrieveListOfJobOpenings',
                 ],
 			},
 		},
-		default: '',
-		description: 'The response will include only companies located in the given country name or state name/abbreviation',
-	},
+    },
 ];
 
 export const seenAtRangeFields: INodeProperties[] = [
