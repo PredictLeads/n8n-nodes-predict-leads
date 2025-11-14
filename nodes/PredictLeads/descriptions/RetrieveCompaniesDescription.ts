@@ -4,7 +4,7 @@ export const retrieveCompaniesOperation: INodePropertyOptions = {
 	name: 'Retrieve Companies',
 	value: 'retrieveCompanies',
 	action: 'Retrieve Companies',
-	description: 'Returns a list of companies filtered by their location and size, ordered by last updated date.',
+	description: 'Returns a list of companies filtered by their location and size, ordered by last updated date',
 	routing: {
 		request: {
 			method: 'GET',
@@ -70,7 +70,7 @@ export const retrieveCompaniesFields: INodeProperties[] = [
 				value: '10,000+',
 			},
 		],
-		default: '',
-		description: 'An array of one or more valid company sizes.',
+		default: [],
+		description: 'An array of one or more valid company sizes',
 	},
 ];

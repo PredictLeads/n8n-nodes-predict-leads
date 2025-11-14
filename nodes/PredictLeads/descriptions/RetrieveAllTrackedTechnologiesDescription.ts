@@ -4,7 +4,7 @@ export const retrieveAllTrackedTechnologiesOperation: INodePropertyOptions = {
 	name: 'Retrieve All Tracked Technologies',
 	value: 'retrieveAllTrackedTechnologies',
 	action: 'Retrieve All Tracked Technologies',
-	description: 'Returns a list of all tracked Technologies.',
+	description: 'Returns a list of all tracked Technologies',
 	routing: {
 		request: {
 			method: 'GET',
@@ -30,7 +30,7 @@ export const retrieveAllTrackedTechnologiesFields: INodeProperties[] = [
 			},
 		},
 		default: '',
-		description: 'Filter results based on Technology\'s fuzzy name.',
+		description: 'Filter results based on Technology\'s fuzzy name',
 	},
 	{
 		displayName: 'Order By',
@@ -45,12 +45,12 @@ export const retrieveAllTrackedTechnologiesFields: INodeProperties[] = [
 			{
 				name: 'Created At Ascending',
 				value: 'created_at_asc',
-				description: 'Order by created_at, ascending.',
+				description: 'Order by created_at, ascending',
 			},
 			{
 				name: 'Created At Descending',
 				value: 'created_at_desc',
-				description: 'Order by created_at, descending.',
+				description: 'Order by created_at, descending',
 			},
 			{
 				name: 'Fuzzy Score Descending',
@@ -59,6 +59,6 @@ export const retrieveAllTrackedTechnologiesFields: INodeProperties[] = [
 			},
 		],
 		default: 'created_at_asc',
-		description: 'Order of TechnologiesDatasets.',
+		description: 'Order of TechnologiesDatasets',
 	},
 ];

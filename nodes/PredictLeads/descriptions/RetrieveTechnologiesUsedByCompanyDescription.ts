@@ -1,10 +1,10 @@
 import type { INodePropertyOptions } from 'n8n-workflow';
 
 export const retrieveTechnologiesUsedByCompanyOperation: INodePropertyOptions = {
-	name: 'Retrieve Technologies used by specific Company',
+	name: 'Retrieve Technologies Used by Specific Company',
 	value: 'retrieveTechnologiesUsedByCompany',
 	action: 'Retrieve Technologies used by specific Company',
-	description: 'Returns Technologies used by a specific Company as a list of Technology Detections.',
+	description: 'Returns Technologies used by a specific Company as a list of Technology Detections',
 	routing: {
 		request: {
 			method: 'GET',

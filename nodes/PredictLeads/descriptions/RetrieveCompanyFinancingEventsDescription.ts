@@ -4,7 +4,7 @@ export const retrieveCompanyFinancingEventsOperation: INodePropertyOptions = {
 	name: 'Retrieve Company Financing Events',
 	value: 'retrieveCompanyFinancingEvents',
 	action: 'Retrieve Company Financing Events',
-	description: 'Returns a list of company\'s Financing Events.',
+	description: 'Returns a list of company\'s Financing Events',
 	routing: {
 		request: {
 			method: 'GET',

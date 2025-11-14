@@ -4,7 +4,7 @@ export const retrieveCompanyWebsiteEvolutionOperation: INodePropertyOptions = {
 	name: 'Retrieve Company Website Evolution',
 	value: 'retrieveCompanyWebsiteEvolution',
 	action: 'Retrieve Company Website Evolution',
-	description: 'Returns a list of company\'s Website Evolution.',
+	description: 'Returns a list of company\'s Website Evolution',
 	routing: {
 		request: {
 			method: 'GET',

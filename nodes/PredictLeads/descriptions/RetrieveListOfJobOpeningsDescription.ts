@@ -4,7 +4,7 @@ export const retrieveListOfJobOpeningsOperation: INodePropertyOptions = {
 	name: 'Retrieve a List of Job Openings',
 	value: 'retrieveListOfJobOpenings',
 	action: 'Retrieve a List of Job Openings',
-	description: 'Returns a list of Job Openings filtered by a given profession (e.g. "Sales Engineers" or "Marketing Managers") using O*NET occupation codes and/or location of the company.',
+	description: 'Returns a list of Job Openings filtered by a given profession (e.g. "Sales Engineers" or "Marketing Managers") using O*NET occupation codes and/or location of the company',
 	routing: {
 		request: {
 			method: 'GET',

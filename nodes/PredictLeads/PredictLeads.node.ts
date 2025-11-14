@@ -73,34 +73,35 @@ export class PredictLeads implements INodeType {
 				displayName: 'Resource',
 				name: 'resource',
 				type: 'options',
+				noDataExpression: true,
 				options:
 				[
 					{
-						name: 'Companies',
+						name: 'Company',
 						value: 'companies',
 					},
 					{
-						name: 'Job Openings',
+						name: 'Job Opening',
 						value: 'jobOpenings',
 					},
 					{
-						name: 'Technology Detections',
+						name: 'Technology Detection',
 						value: 'technologyDetections',
 					},
 					{
-						name: 'Technologies',
+						name: 'Technology',
 						value: 'technologies',
 					},
 					{
-						name: 'News Events',
+						name: 'News Event',
 						value: 'newsEvents',
 					},
 					{
-						name: 'Financing Events',
+						name: 'Financing Event',
 						value: 'financingEvents',
 					},
 					{
-						name: 'Connections',
+						name: 'Connection',
 						value: 'connections',
 					},
 					{
@@ -126,7 +127,7 @@ export class PredictLeads implements INodeType {
 					retrieveCompanyOperation,
 					retrieveCompaniesOperation,
 				],
-				default: 'retrieveCompany',
+				default: '',
 			},
 
 			{
@@ -145,7 +146,7 @@ export class PredictLeads implements INodeType {
 					retrieveSingleJobOpeningOperation,
 					retrieveListOfJobOpeningsOperation,
 				],
-				default: 'retrieveCompanyJobOpenings',
+				default: '',
 			},
 
 			{
@@ -163,7 +164,7 @@ export class PredictLeads implements INodeType {
 					retrieveTechnologiesUsedByCompanyOperation,
 					retrieveCompaniesUsingSpecificTechnologyOperation,
 				],
-				default: 'retrieveTechnologiesUsedByCompany',
+				default: '',
 			},
 
 			{
@@ -181,7 +182,7 @@ export class PredictLeads implements INodeType {
 					retrieveAllTrackedTechnologiesOperation,
 					retrieveSingleTechnologyByIdOrFuzzyNameOperation,
 				],
-				default: 'retrieveAllTrackedTechnologies',
+				default: '',
 			},
 
 			{
@@ -199,7 +200,7 @@ export class PredictLeads implements INodeType {
 					retrieveCompanyNewsEventsOperation,
 					retrieveSingleNewsEventOperation,
 				],
-				default: 'retrieveCompanyNewsEvents',
+				default: '',
 			},
 
 			{
@@ -216,7 +217,7 @@ export class PredictLeads implements INodeType {
 				options: [
 					retrieveCompanyFinancingEventsOperation,
 				],
-				default: 'retrieveCompanyFinancingEvents',
+				default: '',
 			},
 
 			{
@@ -234,7 +235,7 @@ export class PredictLeads implements INodeType {
 					retrieveCompanyConnectionsOperation,
 					retrievePortfolioCompaniesOperation,
 				],
-				default: 'retrieveCompanyConnections',
+				default: '',
 			},
 
 			{
@@ -251,7 +252,7 @@ export class PredictLeads implements INodeType {
 				options: [
 					retrieveCompanyWebsiteEvolutionOperation,
 				],
-				default: 'retrieveCompanyWebsiteEvolution',
+				default: '',
 			},
 
 			// Common Fields

@@ -4,7 +4,7 @@ export const retrieveCompanyJobOpeningsOperation: INodePropertyOptions = {
 	name: 'Retrieve Company Job Openings',
 	value: 'retrieveCompanyJobOpenings',
 	action: 'Retrieve Company Job Openings',
-	description: 'Returns a list of company\'s Job Openings.',
+	description: 'Returns a list of company\'s Job Openings',
 	routing: {
 		request: {
 			method: 'GET',
@@ -37,7 +37,7 @@ export const retrieveCompanyJobOpeningsFields: INodeProperties[] = [
 			},
 		},
 		default: false,
-		description: 'Set to true if you\'d like to receive JobOpenings that are not closed, have last_seen_at more recent than 5 days and were found in the last year.',
+		description: 'Set to true if you\'d like to receive JobOpenings that are not closed, have last_seen_at more recent than 5 days and were found in the last year',
 	},
 	{
 		displayName: 'Not Closed',
@@ -49,7 +49,7 @@ export const retrieveCompanyJobOpeningsFields: INodeProperties[] = [
 			},
 		},
 		default: false,
-		description: 'Similar to active_only, but without considering last_seen_at timestamp.',
+		description: 'Similar to active_only, but without considering last_seen_at timestamp',
 	},
 	{
 		displayName: 'With Description Only',
@@ -61,7 +61,7 @@ export const retrieveCompanyJobOpeningsFields: INodeProperties[] = [
 			},
 		},
 		default: false,
-		description: 'Only return JobOpenings that have description.',
+		description: 'Only return JobOpenings that have description',
 	},
 	{
 		displayName: 'With Location Only',
@@ -73,7 +73,7 @@ export const retrieveCompanyJobOpeningsFields: INodeProperties[] = [
 			},
 		},
 		default: false,
-		description: 'Only return JobOpenings that have location.',
+		description: 'Only return JobOpenings that have location',
 	},
 	{
 		displayName: 'Categories',
@@ -86,115 +86,115 @@ export const retrieveCompanyJobOpeningsFields: INodeProperties[] = [
 		},
 		options: [
 			{
-				name: 'administration',
+				name: 'Administration',
 				value: 'administration',
 			},
 			{
-				name: 'consulting',
+				name: 'Consulting',
 				value: 'consulting',
 			},
 			{
-				name: 'data_analysis',
+				name: 'Data analysis',
 				value: 'data_analysis',
 			},
 			{
-				name: 'design',
+				name: 'Design',
 				value: 'design',
 			},
 			{
-				name: 'directors',
+				name: 'Directors',
 				value: 'directors',
 			},
 			{
-				name: 'education',
+				name: 'Education',
 				value: 'education',
 			},
 			{
-				name: 'engineering',
+				name: 'Engineering',
 				value: 'engineering',
 			},
 			{
-				name: 'finance',
+				name: 'Finance',
 				value: 'finance',
 			},
 			{
-				name: 'healthcare_services',
+				name: 'Healthcare services',
 				value: 'healthcare_services',
 			},
 			{
-				name: 'human_resources',
+				name: 'Human resources',
 				value: 'human_resources',
 			},
 			{
-				name: 'information_technology',
+				name: 'Information technology',
 				value: 'information_technology',
 			},
 			{
-				name: 'internship',
+				name: 'Internship',
 				value: 'internship',
 			},
 			{
-				name: 'legal',
+				name: 'Legal',
 				value: 'legal',
 			},
 			{
-				name: 'management',
+				name: 'Management',
 				value: 'management',
 			},
 			{
-				name: 'marketing',
+				name: 'Marketing',
 				value: 'marketing',
 			},
 			{
-				name: 'military_and_protective_services',
+				name: 'Military and protective services',
 				value: 'military_and_protective_services',
 			},
 			{
-				name: 'operations',
+				name: 'Operations',
 				value: 'operations',
 			},
 			{
-				name: 'purchasing',
+				name: 'Purchasing',
 				value: 'purchasing',
 			},
 			{
-				name: 'product_management',
+				name: 'Product management',
 				value: 'product_management',
 			},
 			{
-				name: 'quality_assurance',
+				name: 'Quality assurance',
 				value: 'quality_assurance',
 			},
 			{
-				name: 'real_estate',
+				name: 'Real estate',
 				value: 'real_estate',
 			},
 			{
-				name: 'research',
+				name: 'Research',
 				value: 'research',
 			},
 			{
-				name: 'sales',
+				name: 'Sales',
 				value: 'sales',
 			},
 			{
-				name: 'software_development',
+				name: 'Software development',
 				value: 'software_development',
 			},
 			{
-				name: 'support',
+				name: 'Support',
 				value: 'support',
 			},
 			{
-				name: 'manual_work',
+				name: 'Manual work',
 				value: 'manual_work',
 			},
 			{
-				name: 'food',
+				name: 'Food',
 				value: 'food',
 			},
 		],
-		default: '',
-		description: 'Comma-separated (,) JobOpening categories.',
+		default: [],
+		description: 'Comma-separated (,) JobOpening categories',
 	},
 ];

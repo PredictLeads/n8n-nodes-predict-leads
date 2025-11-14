@@ -39,7 +39,7 @@ export const domainFields: INodeProperties[] = [
             },
         },
         default: '',
-        description: 'Company\'s domain.',
+        description: 'Company\'s domain',
     },
 ];
 
@@ -59,7 +59,7 @@ export const locationFields: INodeProperties[] = [
 			},
 		},
 		default: '',
-		description: 'The response will include only companies located in the given country name or state name/abbreviation.',
+		description: 'The response will include only companies located in the given country name or state name/abbreviation',
 	},
 ];
 
@@ -83,7 +83,7 @@ export const seenAtRangeFields: INodeProperties[] = [
             },
         },
         default: '',
-        description: 'Only return results first seen after given date (ISO 8601).',
+        description: 'Only return results first seen after given date (ISO 8601)',
     },
     {
         displayName: 'First Seen At Until',
@@ -103,7 +103,7 @@ export const seenAtRangeFields: INodeProperties[] = [
             },
         },
         default: '',
-        description: 'Only return results first seen before given date (ISO 8601).',
+        description: 'Only return results first seen before given date (ISO 8601)',
     },
     {
         displayName: 'Last Seen At From',
@@ -120,7 +120,7 @@ export const seenAtRangeFields: INodeProperties[] = [
             },
         },
         default: '',
-        description: 'Only return results last seen after given date (ISO 8601).',
+        description: 'Only return results last seen after given date (ISO 8601)',
     },
     {
         displayName: 'Last Seen At Until',
@@ -137,7 +137,7 @@ export const seenAtRangeFields: INodeProperties[] = [
             },
         },
         default: '',
-        description: 'Only return results last seen before given date (ISO 8601).',
+        description: 'Only return results last seen before given date (ISO 8601)',
     },
 ];
 
@@ -164,12 +164,15 @@ export const paginationFields: INodeProperties[] = [
             },
         },
         default: 1,
-        description: 'Page number of shown items.',
+        description: 'Page number of shown items',
     },
     {
         displayName: 'Limit',
         name: 'limit',
         type: 'number',
+								typeOptions: {
+									minValue: 1,
+								},
         displayOptions: {
             show: {
                 operation: [
@@ -187,7 +190,7 @@ export const paginationFields: INodeProperties[] = [
                 ],
             },
         },
-        default: 100,
-        description: 'Limit the number of shown items per page.',
+        default: 50,
+        description: 'Max number of results to return',
     },
 ];

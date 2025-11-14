@@ -4,7 +4,7 @@ export const retrievePortfolioCompaniesOperation: INodePropertyOptions = {
 	name: 'Retrieve Portfolio Companies',
 	value: 'retrievePortfolioCompanies',
 	action: 'Retrieve Portfolio Companies',
-	description: 'Returns the Portfolio Companies found on the portfolio pages of thousands of VCs, accelerators, and incubators, as a list of Connections categorized as investor, ordered by the first_seen_at, descending.',
+	description: 'Returns the Portfolio Companies found on the portfolio pages of thousands of VCs, accelerators, and incubators, as a list of Connections categorized as investor, ordered by the first_seen_at, descending',
 	routing: {
 		request: {
 			method: 'GET',

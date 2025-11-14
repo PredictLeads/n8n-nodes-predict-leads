@@ -4,7 +4,7 @@ export const retrieveCompanyOperation: INodePropertyOptions = {
 	name: 'Retrieve Company',
 	value: 'retrieveCompany',
 	action: 'Retrieve Company',
-	description: 'Returns Company.',
+	description: 'Returns Company',
 	routing: {
 		request: {
 			method: 'GET',

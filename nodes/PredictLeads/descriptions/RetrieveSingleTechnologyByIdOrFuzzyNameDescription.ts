@@ -4,7 +4,7 @@ export const retrieveSingleTechnologyByIdOrFuzzyNameOperation: INodePropertyOpti
 	name: 'Retrieve a Single Technology by ID or Fuzzy Name',
 	value: 'retrieveSingleTechnologyByIdOrFuzzyName',
 	action: 'Retrieve a Single Technology by ID or Fuzzy Name',
-	description: 'Returns a single Technology.',
+	description: 'Returns a single Technology',
 	routing: {
 		request: {
 			method: 'GET',

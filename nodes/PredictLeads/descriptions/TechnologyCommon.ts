@@ -14,6 +14,6 @@ export const technologyIdOrFuzzyNameFields: INodeProperties[] = [
 			},
 		},
 		default: '',
-		description: 'Technology\'s ID or fuzzy name.',
+		description: 'Technology\'s ID or fuzzy name',
 	},
 ];
