@@ -62,29 +62,9 @@ export const retrieveCompanyNewsEventsFields: INodeProperties[] = [
 				description: 'Company acquired another company',
 			},
 			{
-				name: 'Merges With',
-				value: 'merges_with',
-				description: 'Company merges with another company',
-			},
-			{
-				name: 'Sells Assets To',
-				value: 'sells_assets_to',
-				description: 'Company sells assets (like properties or warehouses) to other company',
-			},
-			{
-				name: 'Signs New Client',
-				value: 'signs_new_client',
-				description: 'Company signs new client',
-			},
-			{
-				name: 'Files Suit Against',
-				value: 'files_suit_against',
-				description: 'Company files suit against other company',
-			},
-			{
-				name: 'Has Issues With',
-				value: 'has_issues_with',
-				description: 'Company has vulnerability problems',
+				name: 'Attends Event',
+				value: 'attends_event',
+				description: 'Company attends an event',
 			},
 			{
 				name: 'Closes Offices In',
@@ -95,11 +75,6 @@ export const retrieveCompanyNewsEventsFields: INodeProperties[] = [
 				name: 'Decreases Headcount By',
 				value: 'decreases_headcount_by',
 				description: 'Company lays off employees',
-			},
-			{
-				name: 'Attends Event',
-				value: 'attends_event',
-				description: 'Company attends an event',
 			},
 			{
 				name: 'Expands Facilities',
@@ -117,19 +92,39 @@ export const retrieveCompanyNewsEventsFields: INodeProperties[] = [
 				description: 'Company opens new offices in another town, state, country or continent',
 			},
 			{
-				name: 'Increases Headcount By',
-				value: 'increases_headcount_by',
-				description: 'Company offers new job vacancies',
-			},
-			{
-				name: 'Opens New Location',
-				value: 'opens_new_location',
-				description: 'Company opens new service location like hotels, restaurants, bars, hospitals etc',
+				name: 'Files Suit Against',
+				value: 'files_suit_against',
+				description: 'Company files suit against other company',
 			},
 			{
 				name: 'Goes Public',
 				value: 'goes_public',
 				description: 'Company issues shares to the public for the first time',
+			},
+			{
+				name: 'Has Issues With',
+				value: 'has_issues_with',
+				description: 'Company has vulnerability problems',
+			},
+			{
+				name: 'Hires',
+				value: 'hires',
+				description: 'Company hired new executive or senior personnel',
+			},
+			{
+				name: 'Identified as Competitor Of',
+				value: 'identified_as_competitor_of',
+				description: 'New or existing competitor was identified',
+			},
+			{
+				name: 'Increases Headcount By',
+				value: 'increases_headcount_by',
+				description: 'Company offers new job vacancies',
+			},
+			{
+				name: 'Integrates With',
+				value: 'integrates_with',
+				description: 'Company integrates with other company',
 			},
 			{
 				name: 'Invests Into',
@@ -142,36 +137,6 @@ export const retrieveCompanyNewsEventsFields: INodeProperties[] = [
 				description: 'Company buys assets (like properties or warehouses) from other company',
 			},
 			{
-				name: 'Receives Financing',
-				value: 'receives_financing',
-				description: 'Company receives financing like venture funding, loan, grant etc',
-			},
-			{
-				name: 'Hires',
-				value: 'hires',
-				description: 'Company hired new executive or senior personnel',
-			},
-			{
-				name: 'Leaves',
-				value: 'leaves',
-				description: 'Executive or senior personnel left the company',
-			},
-			{
-				name: 'Promotes',
-				value: 'promotes',
-				description: 'Company promoted existing executive or senior personnel',
-			},
-			{
-				name: 'Retires From',
-				value: 'retires_from',
-				description: 'Executive or senior personnel retire from the company',
-			},
-			{
-				name: 'Integrates With',
-				value: 'integrates_with',
-				description: 'Company integrates with other company',
-			},
-			{
 				name: 'Is Developing',
 				value: 'is_developing',
 				description: 'Company is developing a new offering',
@@ -182,9 +147,29 @@ export const retrieveCompanyNewsEventsFields: INodeProperties[] = [
 				description: 'Company launches new offering',
 			},
 			{
+				name: 'Leaves',
+				value: 'leaves',
+				description: 'Executive or senior personnel left the company',
+			},
+			{
+				name: 'Merges With',
+				value: 'merges_with',
+				description: 'Company merges with another company',
+			},
+			{
+				name: 'Opens New Location',
+				value: 'opens_new_location',
+				description: 'Company opens new service location like hotels, restaurants, bars, hospitals etc',
+			},
+			{
 				name: 'Partners With',
 				value: 'partners_with',
 				description: 'Company partners with other company',
+			},
+			{
+				name: 'Promotes',
+				value: 'promotes',
+				description: 'Company promoted existing executive or senior personnel',
 			},
 			{
 				name: 'Receives Award',
@@ -192,14 +177,29 @@ export const retrieveCompanyNewsEventsFields: INodeProperties[] = [
 				description: 'Company or person at the company receives an award',
 			},
 			{
+				name: 'Receives Financing',
+				value: 'receives_financing',
+				description: 'Company receives financing like venture funding, loan, grant etc',
+			},
+			{
 				name: 'Recognized As',
 				value: 'recognized_as',
 				description: 'Company or person at the company receives recognition',
 			},
 			{
-				name: 'Identified as Competitor Of',
-				value: 'identified_as_competitor_of',
-				description: 'New or existing competitor was identified',
+				name: 'Retires From',
+				value: 'retires_from',
+				description: 'Executive or senior personnel retire from the company',
+			},
+			{
+				name: 'Sells Assets To',
+				value: 'sells_assets_to',
+				description: 'Company sells assets (like properties or warehouses) to other company',
+			},
+			{
+				name: 'Signs New Client',
+				value: 'signs_new_client',
+				description: 'Company signs new client',
 			},
 		],
 		default: [],

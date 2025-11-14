@@ -81,28 +81,28 @@ export class PredictLeads implements INodeType {
 						value: 'companies',
 					},
 					{
-						name: 'Job Opening',
-						value: 'jobOpenings',
-					},
-					{
-						name: 'Technology Detection',
-						value: 'technologyDetections',
-					},
-					{
-						name: 'Technology',
-						value: 'technologies',
-					},
-					{
-						name: 'News Event',
-						value: 'newsEvents',
+						name: 'Connection',
+						value: 'connections',
 					},
 					{
 						name: 'Financing Event',
 						value: 'financingEvents',
 					},
 					{
-						name: 'Connection',
-						value: 'connections',
+						name: 'Job Opening',
+						value: 'jobOpenings',
+					},
+					{
+						name: 'News Event',
+						value: 'newsEvents',
+					},
+					{
+						name: 'Technology',
+						value: 'technologies',
+					},
+					{
+						name: 'Technology Detection',
+						value: 'technologyDetections',
 					},
 					{
 						name: 'Website Evolution',

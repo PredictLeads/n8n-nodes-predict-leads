@@ -37,7 +37,7 @@ export const retrieveCompanyJobOpeningsFields: INodeProperties[] = [
 			},
 		},
 		default: false,
-		description: 'Set to true if you\'d like to receive JobOpenings that are not closed, have last_seen_at more recent than 5 days and were found in the last year',
+		description: 'Whether you\'d like to receive JobOpenings that are not closed, have last_seen_at more recent than 5 days and were found in the last year',
 	},
 	{
 		displayName: 'Not Closed',
@@ -49,7 +49,7 @@ export const retrieveCompanyJobOpeningsFields: INodeProperties[] = [
 			},
 		},
 		default: false,
-		description: 'Similar to active_only, but without considering last_seen_at timestamp',
+		description: 'Whether you\'d like to receive JobOpenings that are not closed',
 	},
 	{
 		displayName: 'With Description Only',
@@ -61,7 +61,7 @@ export const retrieveCompanyJobOpeningsFields: INodeProperties[] = [
 			},
 		},
 		default: false,
-		description: 'Only return JobOpenings that have description',
+		description: 'Whether you\'d like to receive only JobOpenings that have description',
 	},
 	{
 		displayName: 'With Location Only',
@@ -73,7 +73,7 @@ export const retrieveCompanyJobOpeningsFields: INodeProperties[] = [
 			},
 		},
 		default: false,
-		description: 'Only return JobOpenings that have location',
+		description: 'Whether you\'d like to receive only JobOpenings that have location',
 	},
 	{
 		displayName: 'Categories',
@@ -118,6 +118,10 @@ export const retrieveCompanyJobOpeningsFields: INodeProperties[] = [
 				value: 'finance',
 			},
 			{
+				name: 'Food',
+				value: 'food',
+			},
+			{
 				name: 'Healthcare Services',
 				value: 'healthcare_services',
 			},
@@ -142,6 +146,10 @@ export const retrieveCompanyJobOpeningsFields: INodeProperties[] = [
 				value: 'management',
 			},
 			{
+				name: 'Manual Work',
+				value: 'manual_work',
+			},
+			{
 				name: 'Marketing',
 				value: 'marketing',
 			},
@@ -154,12 +162,12 @@ export const retrieveCompanyJobOpeningsFields: INodeProperties[] = [
 				value: 'operations',
 			},
 			{
-				name: 'Purchasing',
-				value: 'purchasing',
-			},
-			{
 				name: 'Product Management',
 				value: 'product_management',
+			},
+			{
+				name: 'Purchasing',
+				value: 'purchasing',
 			},
 			{
 				name: 'Quality Assurance',
@@ -184,14 +192,6 @@ export const retrieveCompanyJobOpeningsFields: INodeProperties[] = [
 			{
 				name: 'Support',
 				value: 'support',
-			},
-			{
-				name: 'Manual Work',
-				value: 'manual_work',
-			},
-			{
-				name: 'Food',
-				value: 'food',
 			},
 		],
 		default: [],
