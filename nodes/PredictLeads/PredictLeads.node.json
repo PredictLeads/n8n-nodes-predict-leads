@@ -2,16 +2,20 @@
 	"node": "n8n-nodes-predict-leads",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
-	"categories": ["Development", "Developer Tools"],
+	"categories": [
+		"predictleads",
+		"sales-intelligence",
+		"enrichment"
+  	],
 	"resources": {
 		"credentialDocumentation": [
 			{
-				"url": "https://github.com/org/repo?tab=readme-ov-file#credentials"
+				"url": "https://docs.predictleads.com/api_endpoints/introduction"
 			}
 		],
 		"primaryDocumentation": [
 			{
-				"url": "https://github.com/org/repo?tab=readme-ov-file"
+				"url": "https://docs.predictleads.com"
 			}
 		]
 	}
