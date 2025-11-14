@@ -94,7 +94,7 @@ export const retrieveCompanyJobOpeningsFields: INodeProperties[] = [
 				value: 'consulting',
 			},
 			{
-				name: 'Data analysis',
+				name: 'Data Analysis',
 				value: 'data_analysis',
 			},
 			{
@@ -118,15 +118,15 @@ export const retrieveCompanyJobOpeningsFields: INodeProperties[] = [
 				value: 'finance',
 			},
 			{
-				name: 'Healthcare services',
+				name: 'Healthcare Services',
 				value: 'healthcare_services',
 			},
 			{
-				name: 'Human resources',
+				name: 'Human Resources',
 				value: 'human_resources',
 			},
 			{
-				name: 'Information technology',
+				name: 'Information Technology',
 				value: 'information_technology',
 			},
 			{
@@ -146,7 +146,7 @@ export const retrieveCompanyJobOpeningsFields: INodeProperties[] = [
 				value: 'marketing',
 			},
 			{
-				name: 'Military and protective services',
+				name: 'Military and Protective Services',
 				value: 'military_and_protective_services',
 			},
 			{
@@ -158,15 +158,15 @@ export const retrieveCompanyJobOpeningsFields: INodeProperties[] = [
 				value: 'purchasing',
 			},
 			{
-				name: 'Product management',
+				name: 'Product Management',
 				value: 'product_management',
 			},
 			{
-				name: 'Quality assurance',
+				name: 'Quality Assurance',
 				value: 'quality_assurance',
 			},
 			{
-				name: 'Real estate',
+				name: 'Real Estate',
 				value: 'real_estate',
 			},
 			{
@@ -178,7 +178,7 @@ export const retrieveCompanyJobOpeningsFields: INodeProperties[] = [
 				value: 'sales',
 			},
 			{
-				name: 'Software development',
+				name: 'Software Development',
 				value: 'software_development',
 			},
 			{
@@ -186,7 +186,7 @@ export const retrieveCompanyJobOpeningsFields: INodeProperties[] = [
 				value: 'support',
 			},
 			{
-				name: 'Manual work',
+				name: 'Manual Work',
 				value: 'manual_work',
 			},
 			{

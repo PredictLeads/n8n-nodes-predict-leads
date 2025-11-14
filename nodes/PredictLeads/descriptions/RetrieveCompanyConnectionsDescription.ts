@@ -62,7 +62,7 @@ export const retrieveCompanyConnectionsFields: INodeProperties[] = [
 				description: 'Company1 being a rebranding of Company2 suggests that Company2 has undergone a process to change its brand identity',
 			},
 			{
-				name: 'Published in',
+				name: 'Published In',
 				value: 'published_in',
 				description: 'The published_in category is usually found on early stage startup websites with fewer accomplishments on the market, but positive press coverage. You can see such connections under titles such as "As seen in", "Featured in", "Talking about us", etc.',
 			},
