@@ -49,7 +49,7 @@ export class PredictLeadsApi implements ICredentialType {
   test: ICredentialTestRequest = {
     request: {
       method: 'GET',
-      url: 'https://predictleads.com/api/v3/companies/predictleads.com',
+      url: 'https://predictleads.com/api/v3/api_subscription',
     },
   };
 }
