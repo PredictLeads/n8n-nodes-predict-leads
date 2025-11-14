@@ -17,22 +17,22 @@ export class PredictLeadsApi implements ICredentialType {
 
   properties: INodeProperties[] = [
     {
-      displayName: 'API Key',
+      displayName: 'Authentication Key',
       name: 'apiKey',
       type: 'string',
       default: '',
       required: true,
       typeOptions: { password: true },
-      description: 'Your PredictLeads API key',
+      description: 'Your personal Authentication key. You can find it under "API Subscriptions" section on "Your Subscription Plans" page.',
     },
     {
-      displayName: 'API Token',
+      displayName: 'Authentication Token',
       name: 'apiToken',
       type: 'string',
       default: '',
       required: true,
       typeOptions: { password: true },
-      description: 'Your PredictLeads API token',
+      description: 'Your personal Authentication token. You can find it under "API Subscriptions" section on "Your Subscription Plans" page.',
     },
   ];
 
