@@ -1,6 +1,6 @@
 {
   "name": "@predictleads/n8n-nodes-predictleads",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "PredictLeads community node for n8n (companies, signals, enrichment).",
   "license": "MIT",
   "homepage": "https://predictleads.com",
