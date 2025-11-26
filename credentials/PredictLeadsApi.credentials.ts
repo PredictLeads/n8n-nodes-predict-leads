@@ -40,8 +40,8 @@ export class PredictLeadsApi implements ICredentialType {
 		type: 'generic',
 		properties: {
 			headers: {
-				'X-Api-Token': '={{$credentials.apiKey}}',
-				'X-Api-Key': '={{$credentials.apiToken}}',
+				'X-Api-Token': '={{$credentials.apiToken}}',
+				'X-Api-Key': '={{$credentials.apiKey}}',
 			},
 		},
 	};
